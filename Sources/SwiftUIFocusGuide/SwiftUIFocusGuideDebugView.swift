@@ -11,6 +11,19 @@ open class SwiftUIFocusGuideDebugView: UIView {
         }
     }
 
+    public var direction: SwiftUIFocusGuideDirection = .top {
+        didSet {
+            switch direction {
+            case .top, .bottom:
+                titleLabel.transform = .identity
+            case .left:
+                titleLabel.transform = CGAffineTransform(rotationAngle: .pi / 2)
+            case .right:
+                titleLabel.transform = CGAffineTransform(rotationAngle: -.pi / 2)
+            }
+        }
+    }
+
     public var title: String? {
         get { titleLabel.text }
         set { titleLabel.text = newValue }
