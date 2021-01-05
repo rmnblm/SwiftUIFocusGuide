@@ -41,7 +41,7 @@ The above example looks like this:
 
 ![Simple Example](Images/simple_example.png)
 
-Passing `debug: true`  visualizes the focus guides on the screen.
+Passing `debug: true`  visualizes the focus guides on the screen. 
 
 A more complex example can be founde in the Example tvOS app.
 
@@ -59,6 +59,8 @@ public func updateUIViewController(_ uiViewController: UIHostingController<Conte
     }
 }
 ```
+
+For a deeper understanding of how `UIFocusGuide` works, I recommend this [article](https://www.enekoalonso.com/articles/understanding-and-visualizing-uifocusguide-on-tvos).
 
 ## Limitations
 Using `UIHostingController` has its caveats: It does not wrap its intrinsic content size. As a result, the focus guide takes up all available space. You would have to set a fixed size with the `frame()` modifier and set its intrinsic content size manually.
