@@ -43,7 +43,7 @@ The above example looks like this:
 
 Passing `debug: true`  visualizes the focus guides on the screen. 
 
-A more complex example can be founde in the Example tvOS app.
+A more complex example can be found in the Example tvOS app.
 
 ## How it works
 `SwiftUIFocusGuide`  wraps its content in a `UIHostingController` and setups a focus guide for each direction. It then sets the `preferredFocusEnvironments` according to the specified destination by name. 
